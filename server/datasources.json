@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "usermgt": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "usrmgt",
+    "password": "",
+    "name": "usermgt",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
