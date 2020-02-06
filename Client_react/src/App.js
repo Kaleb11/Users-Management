@@ -6,8 +6,10 @@ import Main from './components/Main';
 import LoginForm from './components/Login-form';
 import Navbar from './components/Navbar';
 import {Route} from 'react-router-dom';
-import {Link} from 'react-router-dom';
+
 import Addicon from './components/Addicon'
+import Users from './components/Users'
+
 class App extends Component {
     constructor() {
         super()
@@ -59,7 +61,7 @@ render() {
 <div>
 
 <Route    
-path="/login"
+path="/"
         render={() =>
             <LoginForm
             updateUser={this.updateUser}
@@ -71,9 +73,11 @@ path="/login"
   <Main />
   </div>
   
+   
   <Addicon updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
    
   
+        
   </div>
 
         )
