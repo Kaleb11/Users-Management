@@ -27,9 +27,9 @@ getUser(){
 }
 onDelete(){
   let userId=this.state.details.id;
-  axios.delete(`http://localhost:3000/api/usersmgts/${userId} `)
+  axios.delete(`http://localhost:3000/api/usermgts/${userId} `)
 .then(response=>{
-    this.props.history.push('/');
+    this.props.history.push('/Users');
 
 }).catch(err=> console.log(err));
 }

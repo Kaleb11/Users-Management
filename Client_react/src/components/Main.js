@@ -7,19 +7,19 @@ import UserDetails from './UserDetails';
 import AddUser from './AddUser';
 import EditUser from './EditUser';
 import Loginform from './Login-form';
-import Signup from './Signup'
+import Signup from './Signup';
 
 const Main =()=>(
     <main>
         <Switch>
-            <Route exact path='/' component={Loginform} />
-            <Route exact path='/Users' component={Users} />
+        
+        <Route exact path='/Users'  component={Users} />
             <Route exact path='/Signup' component={Signup} />
-            <Route exact path='/Users' component={Signup} />
+            
             <Route exact path='/about' component={About} />
             <Route exact path='/users/add' component={AddUser} />
             <Route exact path='/users/:id' component={UserDetails} />
-            <Route exact path='/users/edit/:id' component={EditUser} />
+            <Route exact path='/users/edit/:id' component={EditUser} />>
         </Switch>
     </main>
 )

@@ -4,13 +4,15 @@ import axios from 'axios'
 class Navbar extends Component{
     constructor(props) {
         super(props);
+       
         this.logout = this.logout.bind(this)
     }
 
     logout(event) {
         event.preventDefault()
         console.log('logging out')
-        axios.post('http://localhost:3000/api/Users/logout').then(response => {
+       
+        axios.post(`http://localhost:3000/api/Users/logout`).then(response => {
             
             console.log(response.data); // Only for debugging
             if (response.status === 200) {

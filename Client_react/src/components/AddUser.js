@@ -9,7 +9,7 @@ class AddUser extends Component{
             method: 'post',
             url:'http://localhost:3000/api/Usermgts?access_token=nm',
             data:newUser}).then(response =>{
-                this.props.history.push('/');
+                this.props.history.push('/Users');
 
             }).catch(err=> console.log(err));
         }

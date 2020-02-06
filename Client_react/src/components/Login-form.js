@@ -48,7 +48,7 @@ class LoginForm extends Component {
                     })
                     
                     this.setState({
-                        redirectTo: '/'
+                        redirectTo: '/Users'
                     })
                 }
             }).catch(error => {

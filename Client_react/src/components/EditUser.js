@@ -17,7 +17,7 @@ class EditUser extends Component{
     componentWillMount(){
         this.getUserDetails();
     }
-    getUsserDetails(){
+    getUserDetails(){
         let userId =this.props.match.params.id;
         axios.get(`http://localhost:3000/api/Usermgts/${userId}`)
         .then(response=>{
@@ -37,7 +37,7 @@ class EditUser extends Component{
             method: 'put',
             url:`http://localhost:3000/api/Usermgts/${this.state.id}`,
             data:newUser}).then(response =>{
-                this.props.history.push('/');
+                this.props.history.push('/Users');
 
             }).catch(err=> console.log(err));
     }
